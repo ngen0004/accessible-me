@@ -14,9 +14,10 @@
 
 <body>
   <div class="container">
+    <a href="#maincontent">Skip To Content &darr;</a>
     <header role="banner">
-      <h1 role="heading">Jam Box Studios</h1>
-      <nav class="main-nav">
+      <h1 role="heading" id="topheading">Jam Box Studios</h1>
+      <nav class="main-nav" role="navigation">
         <ul>
           <li><a href="#">Home</a></li>
           <li><a href="#">Products</a></li>
@@ -26,17 +27,17 @@
       </nav>
       <img src="https://placekitten.com/1200/900" alt="cat">
     </header>
-    <main role="main">
+    <main role="main" id="maincontent">
       <h2 role="heading">Welcome to Jam Box</h2>
       <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus laboriosam praesentium nostrum ipsa eveniet, officia deserunt cumque eius esse enim, ipsam accusantium autem nihil quaerat sequi perferendis optio quia veritatis.</p>
       <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam perferendis expedita sed itaque odit ipsam omnis, eos voluptates magni fugit culpa voluptatibus, inventore eaque, eligendi voluptatum! Voluptate iusto error voluptatibus.</p>
       <aside role="complementary">
         <h3 role="heading">Meet the owner</h3>
-        <ul role="list">
-          <li>Name: John Doe</li>
-          <li>Title: CEO</li>
-          <li>Email: johnjoe@jambox.ca</li>
-          <li>Phone: 613-000-0000</li>
+        <ul itemscope itemtype="https://schema.org/Person" role="list">
+          <li itemprop="name">Name: John Doe</li>
+          <li itemprop="title">Title: CEO</li>
+          <li itemprop="email">Email: johnjoe@jambox.ca</li>
+          <li itemprop="phone">Phone: 613-000-0000</li>
         </ul>
         <h3 role="heading">Address</h3>
         <p>
@@ -46,9 +47,9 @@
           B3T 0L0
         </p>
       </aside>
-      <section class="contact-section">
+      <section class="contact-section" role="region">
         <h2 role="heading">Contact Us</h2>
-        <form action="thanks.html">
+        <form action="thanks.html" role="form">
           <label>Full Name</label>
           <input type="text" placeholder="Full Name">
           <input type="text" placeholder="Email">
@@ -59,6 +60,7 @@
         </form>
       </section>
     </main>
+    <a href="#topheading">Back To the top &darr;</a>
     <footer class="site-footer" role="contentinfo">
       &copy; 2021 Jam Box Studios
     </footer>
